@@ -1,0 +1,18 @@
+/*전역 스타일링*/
+
+body {
+    font-family: "Pretendard Variable";
+    letter-spacing: -0.1px;
+    background-color: lightblue;
+  }
+  
+  
+  .layout{
+      max-width: 390px; /*반응형에 훨씬 좋음!*/
+      background-color: white;
+      margin: 0 auto;
+      min-height: 100vh; 
+      /*늘어났을 때, 스크롤을 해야해서 100이상으로 늘어날 수 있다는 min-height 사용*/
+      /*vh는 뷰포트의 약자 (브라우저 단위) (반응형에 좋음!)*/
+      /*%는 부모 컨포넌트에 의존적이라 의미가 없음*/
+  }
