@@ -1,9 +1,12 @@
 import "./styles/reset.css"
 import "./styles/global.css"
+import TopNav from "./components/TopNav/TopNav";
 
 
 function App(){
-  return <div className="layout">안녕하세요</div>;
+  return <div className="layout">
+    <TopNav></TopNav>
+  </div>;
 }
 
 export default App;
