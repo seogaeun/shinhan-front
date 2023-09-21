@@ -6,16 +6,23 @@ import styles from "./TopNav.module.css"
 
 const TopNav = () => {
     const APP_DOWNLOAD_LINK = "https://open.shinhansec.com/phone/goM.jsp?p=OTUxMCYmJiZTJiY*&amp;v=2";
-
+    const currentUrl = window.document.location.href;
 
     //onClick 시, 파라미터로 지정된 링크 복사되고 알림창 보내는 함수 구현
-    const handleCopyClipBoard = (text) =>{
-            navigator.clipboard.writeText(text);
+    const handleCopyClipBoard = () => {
+        navigator.clipboard
+          .writeText(currentUrl)
+          .then(() => {
             alert("공유되었습니다~~");
-    }
+          })
+          .catch((err) => {
+            alert("공유에 실패했습니다.");
+          });
+      };
+      
 
     const onClickShareButton = () => {
-        handleCopyClipBoard('http://localhost:3000/')
+        handleCopyClipBoard();
     }
 
 
@@ -24,22 +31,22 @@ const TopNav = () => {
         <div className={styles.container}>
             <img src={Logo} alt="logo"/>
 
-
-            {/*다운로드 버튼*/}
-            <a href={APP_DOWNLOAD_LINK} target="_blank">
-                <div className={styles.roundButton}>앱 다운로드</div> 
-                {/*class가 아니라 className을 써야함*/}
-                {/*roundbutton통해 난수 생성*/}
-                
-            </a>
-
-
-        {/*공유 버튼*/}
-        <div className={styles.icShare} onClick={onClickShareButton}>
-            <img className={styles.ic_Share_img}src={Share} alt="share"/>
-        </div>
+            {/*----------------오른쪽 버튼--------------------*/}
+            <div className={styles.rightButtonContainer}>
+                    {/*다운로드 버튼*/}
+                    <a href={APP_DOWNLOAD_LINK} target="_blank">
+                        <div className={styles.roundButton}>앱 다운로드</div> 
+                        {/*class가 아니라 className을 써야함*/}
+                        {/*roundbutton통해 난수 생성*/}
+                        
+                    </a>
 
 
+                {/*공유 버튼*/}
+                <div className={styles.icShare} onClick={onClickShareButton}>
+                    <img className={styles.ic_Share_img}src={Share} alt="share"/>
+                </div>
+            </div>
         </div>
 
 
