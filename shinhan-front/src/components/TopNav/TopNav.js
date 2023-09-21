@@ -1,6 +1,6 @@
 //컴포넌트는 시작은 대문자로 해야 인식 함
 import Logo from "./../../assets/images/logo.svg";
-import Share from "./../../assets/images/ic_share.svg"
+import Share from "./../../assets/icons/ic_share.svg"
 import styles from "./TopNav.module.css"
 
 

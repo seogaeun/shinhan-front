@@ -1,0 +1,15 @@
+.accordianContainer{
+    background: #FFF;
+    display: flex;
+    justify-content:space-between;
+    padding: 20px 24px;
+    margin: 12px 0;
+}
+
+.accorianTitle{
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}

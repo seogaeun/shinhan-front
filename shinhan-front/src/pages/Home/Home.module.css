@@ -1,0 +1,144 @@
+.container{
+    background-color: #EAEBEF;
+}
+
+.header{
+    text-align: left;
+    padding: 50px 24px 18px;
+}
+
+.subTitle{
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.primaryColor{
+    color: #0046FF;
+}
+
+.title{
+    color: #000;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+
+
+
+
+
+.mainInfo{
+    margin: 0 auto;
+    padding: 20px 0px 20px 24px;
+    background: #ffffff;
+    width: 327px;
+    height: 386px;
+    flex-shrink: 0;
+
+    border-radius: 24px;
+
+
+}
+
+.cardImageContainer{
+    padding: 20px;
+}
+
+.cardTitle{
+    margin: 0 auto;
+
+    color: #000;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.cardDesc{
+    margin-top: 14px;
+    color: #000;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+}
+
+.subInfo{
+    margin: 20px 0;
+}
+
+.roundButton{
+
+    margin: 0 auto;
+    width: fit-content;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: linear-gradient(90deg, #0094FF 0%, #0046FF 114.29%);
+    margin-Top: 60px;
+
+    color: #FEFEFE;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.16px;
+    padding: 16px 66px;
+}
+
+
+.notice{
+    background-color: #FFFFFF;
+    padding: 48px 24px;
+}
+
+.noticeDesc{
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    gap:12px;
+}
+
+
+.footer{
+    background: #FFF;
+    padding: 27px 35px;
+}
+
+.footerDesc{
+    color: #878787;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.linkArrowIcon{
+    width: 24px;
+    height: 24px;
+}
+
+
+.linkContentContainer{
+    max-height: 0;
+    overflow-y: hidden;
+    transition: all 700ms;
+}
+
+.itemOpen{
+    max-height: 500px;
+    display: block;
+}

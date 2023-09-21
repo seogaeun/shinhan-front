@@ -1,0 +1,23 @@
+.eventInfo{
+    margin-left: 24px;
+    gap:12px;
+}
+
+.infoTitle{
+    margin:12px 0;
+    color: #000;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+.infoText{
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.16px;
+}
